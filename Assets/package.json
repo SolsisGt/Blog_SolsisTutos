@@ -1,0 +1,26 @@
+{
+  "name": "blog_solsistutos",
+  "version": "1.0.0",
+  "description": "Blog para soluciones con tutoriales",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolsisGt/Blog_SolsisTutos.git"
+  },
+  "author": "Pablo Pisquiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SolsisGt/Blog_SolsisTutos/issues"
+  },
+  "homepage": "https://github.com/SolsisGt/Blog_SolsisTutos#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "aos": "^2.3.4"
+  }
+}

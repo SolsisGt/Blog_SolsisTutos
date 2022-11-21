@@ -1,0 +1,220 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  border: 1px solid white;
+  margin-top: 100px;
+}
+
+@font-face {
+  font-family: "tecnocratica";
+  src: url("../Fonts/tecnocratica.ttf");
+}
+@font-face {
+  font-family: "LedSled";
+  src: url("../Fonts/ledsled.ttf");
+}
+@-webkit-keyframes Carrousell {
+  17% {
+    transform: translateX(0vw);
+  }
+  34% {
+    transform: translateX(0vw);
+  }
+  51% {
+    transform: translateX(-100vw);
+  }
+  68% {
+    transform: translateX(-100vw);
+  }
+  85% {
+    transform: translateX(-200vw);
+  }
+  100% {
+    transform: translateX(-200vw);
+  }
+}
+@keyframes Carrousell {
+  17% {
+    transform: translateX(0vw);
+  }
+  34% {
+    transform: translateX(0vw);
+  }
+  51% {
+    transform: translateX(-100vw);
+  }
+  68% {
+    transform: translateX(-100vw);
+  }
+  85% {
+    transform: translateX(-200vw);
+  }
+  100% {
+    transform: translateX(-200vw);
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bienvenida {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "LedSled";
+  font-size: 60px;
+  width: 100vw;
+  margin-right: auto;
+}
+
+.logo_bienvenida {
+  height: 100px;
+  -webkit-animation: updown 2.5s infinite;
+          animation: updown 2.5s infinite;
+}
+
+.Texto1 {
+  color: #004a9f;
+  padding-right: 10px;
+  -webkit-animation: blink 1.5s infinite;
+          animation: blink 1.5s infinite;
+}
+
+.Texto2 {
+  color: #ff9e01;
+  -webkit-animation: blink 1.5s infinite;
+          animation: blink 1.5s infinite;
+}
+
+.Navbar {
+  overflow-x: hidden;
+  background-color: #004a9f;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 15%;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100px;
+  max-height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.List__option__navbar {
+  display: flex;
+  width: 100vw;
+  gap: 2rem;
+  padding-right: 2rem;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+}
+
+.List__option__navbar__item {
+  font-family: "tecnocratica";
+  color: white;
+  font-size: 1.8rem;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.List__option__navbar__item__logo {
+  height: 80px;
+}
+
+.Carrousell {
+  background-color: black;
+  display: flex;
+  width: 300vw;
+  heigth: 100vh;
+  -webkit-animation: Carrousell 15s infinite alternate;
+          animation: Carrousell 15s infinite alternate;
+}
+
+.img_container {
+  overflow-y: hidden;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.img_Carrousell {
+  width: 100vw;
+  height: 100vh;
+}
+
+.arrow {
+  display: flex;
+  position: absolute;
+  color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: end;
+  font-size: 8rem;
+  margin-bottom: 80px;
+  -webkit-animation: updown 2s infinite;
+          animation: updown 2s infinite;
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */
