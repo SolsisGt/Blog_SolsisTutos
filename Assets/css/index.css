@@ -3,8 +3,9 @@ html {
 }
 
 .container {
-  border: 1px solid white;
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @font-face {
@@ -14,6 +15,10 @@ html {
 @font-face {
   font-family: "LedSled";
   src: url("../Fonts/ledsled.ttf");
+}
+@font-face {
+  font-family: "Apollo";
+  src: url("../Fonts/Apollo.ttf");
 }
 @-webkit-keyframes Carrousell {
   17% {
@@ -97,6 +102,40 @@ html {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes Marquee {
+  20% {
+    transform: translateX(-40px);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+@keyframes Marquee {
+  20% {
+    transform: translateX(-40px);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(40px);
   }
 }
 body {
@@ -217,4 +256,220 @@ a {
   -webkit-animation: updown 2s infinite;
           animation: updown 2s infinite;
   opacity: 1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 1rem 100px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 5%;
+  height: 450px;
+  max-height: 450px;
+  width: 350px;
+  max-width: 350px;
+}
+
+.card:nth-child(even) {
+  background: linear-gradient(#004a9f, #ff9e01);
+}
+
+.card:nth-child(odd) {
+  background: linear-gradient(#ff9e01, #004a9f);
+}
+
+.card_Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.imgCard {
+  height: 5rem;
+}
+
+.card_Body {
+  height: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: white;
+}
+
+.Titulo_Card {
+  font-family: "Apollo";
+  font-size: 1.8rem;
+}
+
+.card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  border-radius: 5rem;
+  font-family: "Apollo";
+  font-size: 2rem;
+}
+
+.btn_Ver_Lista {
+  color: white;
+  background-color: black;
+}
+
+.btn_Ver_Lista:hover {
+  color: black;
+  background-color: white;
+  transition: background-color 0.5s;
+}
+
+.Descripcion {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 1rem;
+}
+
+.Titulo_Descripcion {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+}
+
+.Container_Imagen_Descripcion {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.ImagenDescripcion {
+  width: 2000px;
+}
+
+.Texto_descripcion {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Apollo";
+}
+
+.Redes {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.Redes i {
+  font-size: 10rem;
+}
+
+.Iconos_Redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 15rem;
+  height: 15rem;
+  background-color: #004a9f;
+  border-radius: 100%;
+}
+
+.Iconos_Redes:nth-child(odd) {
+  background-color: red;
+}
+
+.Iconos_Redes:hover {
+  -webkit-animation: updown 0.5s infinite;
+          animation: updown 0.5s infinite;
+}
+
+.footer {
+  height: 55vh;
+  background: linear-gradient(#004a9f, red);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 2rem;
+  align-items: start;
+}
+
+.columna_Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90%;
+}
+
+.columna_Footer:nth-child(even) {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.Copyrigth {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(red, #004a9f);
+  font-family: "LedSled";
+  color: white;
+  font-size: 2rem;
+  border-top: 5px solid black;
+}
+
+.Logo_Copyrigth {
+  height: 6rem;
+}
+
+.Redes_footer .Iconos_Redes {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.Redes_footer .Iconos_Redes:nth-child(odd) {
+  background-color: #ff9e01;
+}
+
+.Titulos_Footer {
+  color: white;
+  font-family: "tecnocratica";
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.Menu_Footer {
+  list-style: none;
+}
+
+.Titulo {
+  color: #004a9f;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "LedSled";
+  -webkit-animation: Marquee 3s infinite alternate;
+          animation: Marquee 3s infinite alternate;
+}
+
+.Titulo::first-letter {
+  color: #ff9e01;
 }/*# sourceMappingURL=index.css.map */

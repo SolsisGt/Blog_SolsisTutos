@@ -1,11 +1,23 @@
 html
     scroll-behavior: smooth
 .container
-    border: 1px solid white
-    margin-top: 100px
+    padding-top: 100px
+    padding-left: 20px
+    padding-right: 20px
 @import _Fuentes.sass
 @import _variables.sass
 @import _Animacion.sass
 @import _Inicio.sass
 @import _NavBar.sass
 @import _Slider.sass
+@import _Cards.sass
+@import _Descripcion.sass
+@import _footer.sass
+.Titulo
+    color: $Azul
+    text-align: center
+    font-size: 3rem
+    font-family: $Fuente_Main
+    animation:  Marquee 3s infinite alternate
+.Titulo::first-letter
+     color: $Naranja

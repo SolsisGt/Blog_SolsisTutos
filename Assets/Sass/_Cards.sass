@@ -1,0 +1,57 @@
+.cards
+    display: grid
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr))
+    gap: 40px
+    padding: 1rem 100px
+    justify-content: center
+    align-items: center
+    padding-bottom: 5rem
+.card
+    padding: 1.5rem
+    border-radius: 5%
+    height: 450px
+    max-height: 450px
+    width: 350px
+    max-width: 350px
+.card:nth-child(even)
+    background: linear-gradient($Azul,$Naranja)
+.card:nth-child(odd)
+    background: linear-gradient($Naranja,$Azul)
+.card_Header
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+    color: white
+.imgCard
+    height: 5rem
+.card_Body
+    height: 17rem
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 6rem
+    color: white
+.Titulo_Card
+    font-family: $Fuente_Textos
+    font-size: 1.8rem
+.card_footer
+    display: flex
+    align-items: center
+    justify-content: center
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 3rem
+    width: 100%
+    border-radius: 5rem
+    font-family: $Fuente_Textos
+    font-size: 2rem
+.btn_Ver_Lista
+    color: white
+    background-color: black
+.btn_Ver_Lista:hover
+    color: black
+    background-color: white
+    transition: background-color 0.5s
